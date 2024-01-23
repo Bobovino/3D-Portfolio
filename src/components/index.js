@@ -3,7 +3,7 @@ import Alert from "./Alert";
 import Loader from "./Loader";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import HomeInfo from "./HomeInfo";
+import PopUps from "./PopUps";
 
 export {
     CTA,
@@ -11,5 +11,5 @@ export {
     Loader,
     Navbar,
     Footer,
-    HomeInfo
+    PopUps
 }

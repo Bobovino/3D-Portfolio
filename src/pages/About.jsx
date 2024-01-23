@@ -22,8 +22,9 @@ const About = () => {
 
       <div className='mt-5 flex flex-col gap-3 text-slate-500'>
         <p>
-          Software Engineer based in Spain, specializing in technical
-          education through hands-on learning and building applications.
+          Software Engineer based in Spain, specializing in psychology, 
+          user experience and new technologies through hands-on learning 
+          and building applications.
         </p>
       </div>
 
@@ -47,11 +48,11 @@ const About = () => {
       </div>
 
       <div className='py-16'>
-        <h3 className='subhead-text'>Work Experience.</h3>
+        <h3 className='subhead-text'>Experience.</h3>
         <div className='mt-5 flex flex-col gap-3 text-slate-500'>
           <p>
-            I've worked with all sorts of companies, leveling up my skills and
-            teaming up with smart people. Here's the rundown:
+            I've worked in multiple projects: side projects, academic and spare time projects, leveling up my skills.
+             Here's the rundown:
           </p>
         </div>
 

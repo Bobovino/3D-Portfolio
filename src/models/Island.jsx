@@ -83,10 +83,12 @@ export function Island({
     if (event.key === "ArrowLeft") {
       if (!isRotating) setIsRotating(true);
 
+ 
       islandRef.current.rotation.y += 0.03 * Math.PI;
       rotationSpeed.current = 0.007;
     } else if (event.key === "ArrowRight") {
       if (!isRotating) setIsRotating(true);
+
 
       islandRef.current.rotation.y -= 0.03 * Math.PI;
       rotationSpeed.current = -0.007;
@@ -100,6 +102,22 @@ export function Island({
     }
   };
 
+// Handle mouse wheel event for rotation
+const handleWheel = (event) => {
+  const delta = event.deltaY;
+
+  // Control the sensitivity and max rotation speed
+  const rotationAmount = Math.min(Math.max(delta * 0.1, -0.2), 0.1);
+
+  setIsRotating(true);
+
+
+  islandRef.current.rotation.y += rotationAmount;
+  // Clear any existing timeout
+  clearTimeout(islandRef.current.rotationEndTimeout);
+  setTimeout(() => setIsRotating(false), 150);
+
+};
   useEffect(() => {
     // Add event listeners for pointer and keyboard events
     const canvas = gl.domElement;
@@ -108,6 +126,9 @@ export function Island({
     canvas.addEventListener("pointermove", handlePointerMove);
     window.addEventListener("keydown", handleKeyDown);
     window.addEventListener("keyup", handleKeyUp);
+    canvas.addEventListener("wheel", handleWheel);
+
+    console.log("Event listeners added for wheel");
 
     // Remove event listeners when component unmounts
     return () => {
@@ -116,6 +137,7 @@ export function Island({
       canvas.removeEventListener("pointermove", handlePointerMove);
       window.removeEventListener("keydown", handleKeyDown);
       window.removeEventListener("keyup", handleKeyUp);
+      canvas.removeEventListener("wheel", handleWheel);
     };
   }, [gl, handlePointerDown, handlePointerUp, handlePointerMove]);
 
@@ -152,8 +174,8 @@ export function Island({
        *     always stays within the range of 0 to 2 * Math.PI, which is equivalent to a full
        *     circle in radians.
        */
-      const normalizedRotation =
-        ((rotation % (2 * Math.PI)) + 2 * Math.PI) % (2 * Math.PI);
+      const normalizedRotation =((rotation % (2 * Math.PI)) + 2 * Math.PI) % (2 * Math.PI);
+        console.log("Frame rotation:", rotation, "Normalized:", normalizedRotation); // Debugging
 
       // Set the current stage based on the island's orientation
       switch (true) {
@@ -163,10 +185,10 @@ export function Island({
         case normalizedRotation >= 0.85 && normalizedRotation <= 1.3:
           setCurrentStage(3);
           break;
-        case normalizedRotation >= 2.4 && normalizedRotation <= 2.6:
+        case normalizedRotation >= 2.0 && normalizedRotation <= 3:
           setCurrentStage(2);
           break;
-        case normalizedRotation >= 4.25 && normalizedRotation <= 4.75:
+        case normalizedRotation >= 4.0 && normalizedRotation <= 5:
           setCurrentStage(1);
           break;
         default:

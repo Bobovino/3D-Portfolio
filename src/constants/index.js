@@ -4,13 +4,11 @@ import {
     contact,
     css,
     estate,
-    express,
     git,
     github,
     html,
     javascript,
     linkedin,
-    mongodb,
     motion,
     mui,
     nextjs,
@@ -18,7 +16,6 @@ import {
     pricewise,
     react,
     redux,
-    sass,
     snapgram,
     summiz,
     tailwindcss,
@@ -31,11 +28,6 @@ export const skills = [
         imageUrl: css,
         name: "CSS",
         type: "Frontend",
-    },
-    {
-        imageUrl: express,
-        name: "Express",
-        type: "Backend",
     },
     {
         imageUrl: git,
@@ -56,11 +48,6 @@ export const skills = [
         imageUrl: javascript,
         name: "JavaScript",
         type: "Frontend",
-    },
-    {
-        imageUrl: mongodb,
-        name: "MongoDB",
-        type: "Database",
     },
     {
         imageUrl: motion,
@@ -91,11 +78,6 @@ export const skills = [
         imageUrl: redux,
         name: "Redux",
         type: "State Management",
-    },
-    {
-        imageUrl: sass,
-        name: "Sass",
-        type: "Frontend",
     },
     {
         imageUrl: tailwindcss,
@@ -173,12 +155,12 @@ export const socialLinks = [
     {
         name: 'GitHub',
         iconUrl: github,
-        link: 'https://github.com/YourGitHubUsername',
+        link: 'https://github.com/Bobovino',
     },
     {
         name: 'LinkedIn',
         iconUrl: linkedin,
-        link: 'https://www.linkedin.com/in/YourLinkedInUsername',
+        link: 'https://www.linkedin.com/in/rodrigo-martinez-tabernero',
     }
 ];
 

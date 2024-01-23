@@ -11,7 +11,7 @@ const Footer = () => {
 
       <div className='footer-container'>
         <p>
-          © {currentYear}<strong> Rodrigo Martínez Tabernero</strong>. All rights reserved.
+          © {currentYear}<strong> Rodrigo Martínez Tabernero</strong>
         </p>
 
         <div className='flex gap-3 justify-center items-center'>

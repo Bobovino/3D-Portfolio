@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import { useGLTF, useAnimations } from "@react-three/drei";
+import { useFrame } from "@react-three/fiber";
 
 import planeScene from "../assets/3d/plane.glb";
 
@@ -21,10 +22,14 @@ export function Plane({ isRotating, ...props }) {
     }
   }, [actions, isRotating]);
 
+/*   useFrame(() => {
+    ref.current.position.y = Math.sin(sinusoidalOffset) + 2; // Base Y position + sinusoidal movement
+    // ... other updates for rotation or position
+  }); */
+  
   return (
     <mesh {...props} ref={ref}>
-      // use the primitive element when you want to directly embed a complex 3D
-      model or scene
+  // Use the primitive element when you want to directly embed a complex 3D model or scene
       <primitive object={scene} />
     </mesh>
   );

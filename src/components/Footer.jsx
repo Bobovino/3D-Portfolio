@@ -9,10 +9,11 @@ const Footer = () => {
     <footer className='footer font-poppins'>
       <hr className='border-slate-200' />
 
-      <div className='footer-container'>
+      <div className=' footer-container'>
         <p>
           © {currentYear}<strong> Rodrigo Martínez Tabernero</strong>
         </p>
+
 
         <div className='flex gap-3 justify-center items-center'>
           {socialLinks.map((link) => (

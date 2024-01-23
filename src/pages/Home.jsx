@@ -4,7 +4,7 @@ import { Suspense, useEffect, useRef, useState } from "react";
 import sakura from "../assets/sakura.mp3";
 import { PopUps, Loader } from "../components";
 import { soundoff, soundon } from "../assets/icons";
-import { Bird, Island, Plane, Sky } from "../models";
+import { Bird, Island, Plane, Sky, Ocean } from "../models";
 
 const Home = () => {
   const audioRef = useRef(new Audio(sakura));
@@ -101,6 +101,7 @@ const Home = () => {
             rotation={[0, 20.1, 0]}
             scale={biplaneScale}
           />
+{/*           <Ocean position={[0, 0, 0]} /> */}
         </Suspense>
       </Canvas>
 
@@ -111,7 +112,10 @@ const Home = () => {
           onClick={() => setIsPlayingMusic(!isPlayingMusic)}
           className='w-10 h-10 cursor-pointer object-contain'
         />
-      </div>
+
+    </div>
+
+      
     </section>
   );
 };

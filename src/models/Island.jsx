@@ -129,7 +129,6 @@ const handleWheel = (event) => {
     window.addEventListener("keyup", handleKeyUp);
     canvas.addEventListener("wheel", handleWheel);
 
-    console.log("Event listeners added for wheel");
 
     // Remove event listeners when component unmounts
     return () => {
@@ -176,7 +175,6 @@ const handleWheel = (event) => {
        *     circle in radians.
        */
       const normalizedRotation =((rotation % (2 * Math.PI)) + 2 * Math.PI) % (2 * Math.PI);
-        console.log("Frame rotation:", rotation, "Normalized:", normalizedRotation); // Debugging
 
       // Set the current stage based on the island's orientation
       switch (true) {

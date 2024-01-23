@@ -118,6 +118,7 @@ const handleWheel = (event) => {
   setTimeout(() => setIsRotating(false), 150);
 
 };
+
   useEffect(() => {
     // Add event listeners for pointer and keyboard events
     const canvas = gl.domElement;

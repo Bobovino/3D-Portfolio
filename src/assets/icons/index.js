@@ -32,6 +32,9 @@ import postgresql from './postgresql.svg'
 import aws from './aws.svg'
 import fivehead from './fivehead.svg'
 import openbootcamp from './openbootcamp.svg'
+import aoetwo from './aoetwo.svg'
+import fullstackopen from './fullstackopen.svg'
+import twitch from './twitch.svg'
 
 
 export {
@@ -68,5 +71,8 @@ export {
     postgresql,
     aws,
     fivehead,
-    openbootcamp
+    openbootcamp,
+    aoetwo,
+    fullstackopen,
+    twitch
 }

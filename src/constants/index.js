@@ -183,11 +183,11 @@ export const experiences = [
 
 export const projects = [
     {
-        iconUrl: pricewise,
+        iconUrl: fivehead,
         theme: 'btn-back-red',
-        name: 'Amazon Price Tracker',
+        name: '5head',
         description: 'Developed a web application that tracks and notifies users of price changes for products on Amazon, helping users find the best deals.',
-        link: 'https://github.com/adrianhajdin/pricewise',
+        link: 'https://5head.lol',
     },
     {
         iconUrl: threads,

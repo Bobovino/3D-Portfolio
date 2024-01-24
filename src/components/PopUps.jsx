@@ -12,7 +12,7 @@ const PopUps = ({ currentStage }) => {
         <br />
         A Software Engineer from Spain 🇪🇸 .
         <br />
-        Use mouse wheel, arrow keys or drag with left click button to move the plane.
+        Use mouse wheel, arrow keys or drag with left click button to move the plane around the island.
       </h1>
     );
 

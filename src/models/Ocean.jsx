@@ -8,6 +8,7 @@ Title: Ocean Wave Sim
 
 import React, { useRef } from "react";
 import { useGLTF, useAnimations } from "@react-three/drei";
+import Ocean from  "../assets/3d/ocean_wave_sim.glb"
 
 export function Ocean(props) {
   const group = useRef();

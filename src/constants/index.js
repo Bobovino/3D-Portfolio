@@ -20,13 +20,31 @@ import {
     summiz,
     tailwindcss,
     threads,
-    typescript
+    typescript,
+    java,
+    python,
+    django,
+    djangorf,
+    postgresql,
+    aws,
+    fivehead,
+    openbootcamp
 } from "../assets/icons";
 
 export const skills = [
     {
+        imageUrl: html,
+        name: "HTML",
+        type: "Frontend",
+    },
+    {
         imageUrl: css,
         name: "CSS",
+        type: "Frontend",
+    },
+    {
+        imageUrl: tailwindcss,
+        name: "Tailwind CSS",
         type: "Frontend",
     },
     {
@@ -39,11 +57,7 @@ export const skills = [
         name: "GitHub",
         type: "Version Control",
     },
-    {
-        imageUrl: html,
-        name: "HTML",
-        type: "Frontend",
-    },
+
     {
         imageUrl: javascript,
         name: "JavaScript",
@@ -80,71 +94,42 @@ export const skills = [
         type: "State Management",
     },
     {
-        imageUrl: tailwindcss,
-        name: "Tailwind CSS",
-        type: "Frontend",
-    },
-    {
         imageUrl: typescript,
         name: "TypeScript",
         type: "Frontend",
+    },
+    {
+        imageUrl: java,
+        name: "Java",
+        type: "Backend",
+    },
+    {
+        imageUrl: python,
+        name: "Python",
+        type: "Backend",
+    },
+    {
+        imageUrl: django,
+        name: "Django",
+        type: "Backend",
+    },
+    {
+        imageUrl: djangorf,
+        name: "DjangoRestFramework",
+        type: "Backend",
+    },
+    {
+        imageUrl: postgresql,
+        name: "PostgreSQL",
+        type: "Database",
+    },
+    {
+        imageUrl: aws,
+        name: "AWS",
+        type: "Hosting",
     }
 ];
 
-export const experiences = [
-    {
-        title: "React.js Developer",
-        company_name: "Starbucks",
-        icon: starbucks,
-        iconBg: "#accbe1",
-        date: "March 2020 - April 2021",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "React Native Developer",
-        company_name: "Tesla",
-        icon: tesla,
-        iconBg: "#fbc3bc",
-        date: "Jan 2021 - Feb 2022",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Web Developer",
-        company_name: "Shopify",
-        icon: shopify,
-        iconBg: "#b7e4c7",
-        date: "Jan 2022 - Jan 2023",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Full stack Developer",
-        company_name: "Meta",
-        icon: meta,
-        iconBg: "#a2d2ff",
-        date: "Jan 2023 - Present",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-];
 
 export const socialLinks = [
     {
@@ -163,6 +148,38 @@ export const socialLinks = [
         link: 'https://www.linkedin.com/in/rodrigo-martinez-tabernero',
     }
 ];
+
+export const experiences = [
+    {
+        title: "Bootcamp Student",
+        company_name: "Openbootcamp/Freecodecamp",
+        icon: openbootcamp,
+        iconBg: "white",
+        date: "Jan 2023 - Sep 2023",
+        points: [
+            "Developing and maintaining web applications using React.js and other related technologies.",
+            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+            "Implementing responsive design and ensuring cross-browser compatibility.",
+            "Participating in code reviews and providing constructive feedback to other developers.",
+        ],
+    },
+    {
+        title: "Full stack Developer",
+        company_name: "5Head",
+        icon: fivehead,
+        iconBg: "white",
+        date: "Sep 2023 - Present",
+        points: [
+            "Developing my own side project web applications using React.js, NextJS , Django, and AWS.",
+            "Designing a good user experience, backend microservices and a frontend to create a high-quality product",
+            "Implementing responsive design and ensuring cross-browser compatibility.",
+            "Currently designing an attractive design for the frontend, to achieve both a visually attractive and clockwork functional service",
+            
+        ],
+    },
+];
+
+
 
 export const projects = [
     {

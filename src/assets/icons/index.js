@@ -24,6 +24,15 @@ import arrow from './arrow.svg'
 import contact from './contact.svg'
 import soundon from './soundon.png'
 import soundoff from './soundoff.png'
+import java from './java.svg'
+import python from './python.svg'
+import django from './django.svg'
+import djangorf from './djangorf.svg'
+import postgresql from './postgresql.svg'
+import aws from './aws.svg'
+import fivehead from './fivehead.svg'
+import openbootcamp from './openbootcamp.svg'
+
 
 export {
     css,
@@ -51,5 +60,13 @@ export {
     arrow,
     contact,
     soundon,
-    soundoff
+    soundoff,
+    java,
+    python,
+    django,
+    djangorf,
+    postgresql,
+    aws,
+    fivehead,
+    openbootcamp
 }

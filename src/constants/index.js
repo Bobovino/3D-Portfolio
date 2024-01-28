@@ -160,10 +160,9 @@ export const experiences = [
         iconBg: "white",
         date: "Jan 2023 - Sep 2023",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Developing web applications using React.js, Django and other related technologies.",
+            "Collaborating with other students making colaborative projects, learning Kanban and Scrum for CI/CD and code reviewing",
+            "Learning key industry technologies like containerization with Docker, Docker-compose, Git, Github, Github Actions... ",
         ],
     },
     {

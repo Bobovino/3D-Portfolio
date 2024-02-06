@@ -8,7 +8,7 @@ const ResumeButton = () => {
   const [showDropdown, setShowDropdown] = useState(false);
 
   const resumes = [
-    { name: 'English Resume', file: englishResume },
+    { name: 'English ', file: englishResume },
    /*  { name: 'Spanish Resume', file: spanishResume },
     { name: 'German Resume', file: germanResume }, */
   ];
@@ -30,10 +30,11 @@ const ResumeButton = () => {
                 key={index}
                 href={resume.file}
                 download
-                className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 z-999"
+                className="flex justify-center block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 z-999"
                 role="menuitem"
               >
                 {resume.name}
+                <FaRegFilePdf className='ml-2 '/>
               </a>
             ))}
           </div>

@@ -1,25 +1,16 @@
-import { meta, shopify, starbucks, tesla } from "../assets/images";
 import {
-    car,
     contact,
     css,
-    estate,
     git,
     github,
     html,
     javascript,
     linkedin,
-    motion,
-    mui,
     nextjs,
     nodejs,
-    pricewise,
     react,
     redux,
-    snapgram,
-    summiz,
     tailwindcss,
-    threads,
     typescript,
     java,
     python,
@@ -64,16 +55,6 @@ export const skills = [
     {
         imageUrl: javascript,
         name: "JavaScript",
-        type: "Frontend",
-    },
-    {
-        imageUrl: motion,
-        name: "Motion",
-        type: "Animation",
-    },
-    {
-        imageUrl: mui,
-        name: "Material-UI",
         type: "Frontend",
     },
     {

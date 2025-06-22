@@ -66,7 +66,7 @@ const About = () => {
         <h3 className='subhead-text'>Experience.</h3>
         <div className='mt-5 flex flex-col gap-3 text-slate-500'>
           <p>
-            I've worked in multiple projects: side projects, academic and spare time projects, leveling up my skills.
+            I've worked in multiple projects: free-lance, side projects, academic and spare time projects, leveling up my skills.
              Here's the rundown:
           </p>
         </div>

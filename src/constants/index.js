@@ -20,12 +20,38 @@ import {
     aws,
     fivehead,
     openbootcamp,
+    IESLeonardoDaVinci,
     aoetwo,
     fullstackopen,
-    twitch
+    twitch,
+    spring,
+    godot,
+    docker,
+    redis,
+    dynamodb,
+    sql,
+    dotnet,
+    csharp,
+    malinimar,
+    pdfpro,
 } from "../assets/icons";
 
 export const skills = [
+    {
+        imageUrl: git,
+        name: "Git",
+        type: "Version Control",
+    },
+        {
+        imageUrl: github,
+        name: "GitHub",
+        type: "Version Control",
+    },
+    {
+        imageUrl: docker,
+        name: "Docker",
+        type: "Containerization",
+    },
     {
         imageUrl: html,
         name: "HTML",
@@ -42,19 +68,23 @@ export const skills = [
         type: "Frontend",
     },
     {
-        imageUrl: git,
-        name: "Git",
-        type: "Version Control",
-    },
-    {
-        imageUrl: github,
-        name: "GitHub",
-        type: "Version Control",
-    },
-
-    {
         imageUrl: javascript,
         name: "JavaScript",
+        type: "Frontend",
+    },
+        {
+        imageUrl: typescript,
+        name: "TypeScript",
+        type: "Frontend",
+    },
+        {
+        imageUrl: nodejs,
+        name: "Node.js",
+        type: "Backend",
+    },
+        {
+        imageUrl: react,
+        name: "React",
         type: "Frontend",
     },
     {
@@ -62,29 +92,22 @@ export const skills = [
         name: "Next.js",
         type: "Frontend",
     },
-    {
-        imageUrl: nodejs,
-        name: "Node.js",
-        type: "Backend",
-    },
-    {
-        imageUrl: react,
-        name: "React",
-        type: "Frontend",
-    },
+
+
     {
         imageUrl: redux,
         name: "Redux",
         type: "State Management",
     },
-    {
-        imageUrl: typescript,
-        name: "TypeScript",
-        type: "Frontend",
-    },
+
     {
         imageUrl: java,
         name: "Java",
+        type: "Backend",
+    },
+{
+        imageUrl: spring,
+        name: "Spring",
         type: "Backend",
     },
     {
@@ -98,19 +121,46 @@ export const skills = [
         type: "Backend",
     },
     {
-        imageUrl: djangorf,
-        name: "DjangoRestFramework",
+        imageUrl: csharp,
+        name: "C#",
         type: "Backend",
     },
-    {
+        {
+        imageUrl: dotnet,
+        name: ".NET",
+        type: "Backend",
+    },
+        {
+        imageUrl: sql,
+        name: "SQL",
+        type: "Database",
+    },
+        {
         imageUrl: postgresql,
         name: "PostgreSQL",
         type: "Database",
     },
+        {
+        imageUrl: dynamodb,
+        name: "DynamoDB",
+        type: "Database",
+    },
+        {
+        imageUrl: redis,
+        name: "Redis",
+        type: "Database",
+    },
+
+
     {
         imageUrl: aws,
         name: "AWS",
         type: "Hosting",
+    },
+        {
+        imageUrl: godot,
+        name: "Godot",
+        type: "Game Engine",
     }
 ];
 
@@ -148,10 +198,10 @@ export const experiences = [
     },
     {
         title: "Full stack Developer",
-        company_name: "5Head",
+        company_name: "Guessdraft",
         icon: fivehead,
         iconBg: "white",
-        date: "Sep 2023 - Present",
+        date: "Sep 2023 - 2024",
         points: [
             "Developing my own side project web applications using React.js, NextJS , Django, and AWS.",
             "Designing a good user experience, backend microservices and a frontend to create a high-quality product",
@@ -160,17 +210,67 @@ export const experiences = [
             
         ],
     },
+{
+    title: "Formación Profesional Student",
+    company_name: "I.E.S Leonardo Da Vinci",
+    icon: IESLeonardoDaVinci,
+    iconBg: "white",
+    date: "Oct 2024 - Present",
+    points: [
+        "Learning to design, develop, and maintain multiplatform applications using languages such as Java, Python, and SQL.",
+        "Gaining experience in database management, including relational and non-relational databases.",
+        "Developing desktop, web, and mobile applications following best practices in software engineering.",
+        "Collaborating in team projects using version control systems like Git and applying agile methodologies.",
+        "Understanding the fundamentals of systems integration, deployment, and application security."
+    ],
+},
 ];
 
 
 
-export const projects = [
+export const projects = [    
+        {
+        iconUrl: malinimar,
+        theme: 'btn-back-red',
+        name: 'Malinimar',
+        description: "A book translator that can translate to 200+ languages. It uses OpusMT. The link leads to a library of books I already translated",
+        link: 'https://malinimar.com',
+    },
+            {
+        iconUrl: pdfpro,
+        theme: 'btn-back-red',
+        name: 'PDF to OCR project',
+        description: "A freelance project where I had to make the frontend of a PDF to OCR converter. It uses React and Tesseract",
+        link: 'https://pdfpro.net',
+    },
+            {
+        iconUrl: spring,
+        theme: 'btn-back-red',
+        name: 'Spring project',
+        description: "Basic Spring project to learn the framework. It has a simple CRUD with a SQL database",
+        link: 'https://guessdraft.lol',
+    },
+
+        {
+        iconUrl: twitch,
+        theme: 'btn-back-red',
+        name: 'Elprofesergio',
+        description: "A website I made for a twitch streamer. It dynamically shows his latest videos, sponsors, streams and social media links",
+        link: 'https://elprofesergio.com',
+    },    
     {
         iconUrl: fivehead,
         theme: 'btn-back-red',
-        name: '5head',
+        name: 'Guessdraft',
         description: "Esports draft predictions website. Choose a match, guess side selection and predict the champ select like a professional coach/analyst would do",
-        link: 'https://5head.lol',
+        link: 'https://guessdraft.lol',
+    },
+    {
+        iconUrl: IESLeonardoDaVinci,
+        theme: 'btn-back-red',
+        name: 'DAM',
+        description: "Repository of the projects and exercises done in the I.E.S Leonardo Da Vinci, where I'm currently studying a full-stack development degree",
+        link: 'https://github.com/Bobovino/DAM',
     },
     {
         iconUrl: openbootcamp,

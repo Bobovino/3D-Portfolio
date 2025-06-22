@@ -35,6 +35,17 @@ import openbootcamp from './openbootcamp.svg'
 import aoetwo from './aoetwo.svg'
 import fullstackopen from './fullstackopen.svg'
 import twitch from './twitch.svg'
+import spring from './spring.svg'
+import godot from './godot.svg'
+import docker from './docker.svg'
+import redis from './redis.svg'
+import dynamodb from './dynamodb.svg'
+import sql from './sql.svg'
+import dotnet from './dotnet.svg'
+import csharp from './csharp.svg'
+import IESLeonardoDaVinci from './../images/IESLeonardoDaVinci.png'
+import malinimar from './../images/malinimar.png'
+import pdfpro from './../icons/pdfpro.ico'
 
 
 export {
@@ -72,7 +83,18 @@ export {
     aws,
     fivehead,
     openbootcamp,
+    IESLeonardoDaVinci,
     aoetwo,
     fullstackopen,
-    twitch
+    twitch,
+    spring,
+    godot,
+    docker,
+    redis,
+    dynamodb,
+    sql,
+    dotnet,
+    csharp,
+    malinimar,
+    pdfpro
 }

@@ -1,28 +1,45 @@
-import englishResume from '../assets/pdf/English-Resume.pdf';
-import { FaRegFilePdf, FaDownload } from 'react-icons/fa';
+import { useState } from 'react';
+import Rodrigo_English_Resume_2025 from '../assets/pdf/Rodrigo_English_Resume_2025.pdf';
+import Rodrigo_Deutsch_Lebenslauf_2025 from '../assets/pdf/Rodrigo_Deutsch_Lebenslauf_2025.pdf';
+import Rodrigo_Español_CV_2025 from '../assets/pdf/Rodrigo_Español_CV_2025.pdf';
 
- 
-const ResumeButton = () => {
-  return <>
-    <a
-      href={englishResume}
-      download="Rodrigo_Martinez_Tabernero_Resume_English.pdf"
-      className="hidden sm:inline-flex flex items-center bg-green-500 hover:bg-green-700 text-white font-bold py-1 px-2 sm:py-2 sm:px-4 rounded  justify-center"
-    >
-      <span>Download Resume</span>
-      <FaRegFilePdf className="ml-1 sm:ml-2" />
-    </a>
-    <a
-      href={englishResume}
-      download="Rodrigo_Martinez_Tabernero_Resume_English.pdf"
-      className="sm:hidden flex items-center bg-green-500 hover:bg-green-700 text-white font-bold py-1 px-2 sm:py-2 sm:px-4 rounded inline-flex justify-center"
-    > 
-      <span>Resume</span>
-      <FaDownload className="ml-1" />
-      <FaRegFilePdf className="ml-1 " />
-    </a>
-    </>
- 
+const resumeOptions = [
+  { name: 'English', file: Rodrigo_English_Resume_2025 },
+  { name: 'Deutsch', file: Rodrigo_Deutsch_Lebenslauf_2025 },
+  { name: 'Español', file: Rodrigo_Español_CV_2025 },
+];
+
+const ResumeDropdown = () => {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <div className="relative inline-block text-left">
+      <button
+        className="bg-gray-800 text-white px-4 py-2 rounded-md shadow hover:bg-gray-700 transition"
+        onClick={() => setOpen((prev) => !prev)}
+        onBlur={() => setTimeout(() => setOpen(false), 150)}
+        type="button"
+      >
+        Resume <span className="ml-1">▼</span>
+      </button>
+      {open && (
+        <div className="absolute right-0 mt-2 w-40 origin-top-right bg-white rounded-md shadow-lg z-10 ring-1 ring-black ring-opacity-5">
+          <div className="py-1">
+            {resumeOptions.map((option) => (
+              <a
+                key={option.name}
+                href={option.file}
+                download
+                className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+              >
+                {option.name}
+              </a>
+            ))}
+          </div>
+        </div>
+      )}
+    </div>
+  );
 };
 
-export default ResumeButton
+export default ResumeDropdown;

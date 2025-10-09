@@ -46,6 +46,7 @@ import csharp from './csharp.svg'
 import IESLeonardoDaVinci from './../images/IESLeonardoDaVinci.png'
 import malinimar from './../images/malinimar.png'
 import pdfpro from './../icons/pdfpro.ico'
+import overtinder from './../icons/overtinder.svg'
 
 
 export {
@@ -96,5 +97,6 @@ export {
     dotnet,
     csharp,
     malinimar,
-    pdfpro
+    pdfpro,
+    overtinder
 }
